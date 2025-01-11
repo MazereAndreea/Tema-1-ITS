@@ -40,6 +40,40 @@
 }
 
 .form{
-    margin: 100px auto;
-    width: 40%;
+    .form_inputs{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 100px auto;
+        width: 50%;
+    }
+    .form_submit{
+        text-align: center;
+        width: 20%;
+        margin: 20px auto;
+        border-radius: 15px;
+        background-color: green;
+        padding: 10px;
+        button{
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.poze{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    div{
+        margin: 30px 20px;
+        img{
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
